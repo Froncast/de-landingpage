@@ -1,0 +1,144 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="css/style.min.css")
+		script(src="js/app.js" defer)
+		title de-landingpage | home
+	body
+	section.hero
+		div.container
+			nav.main-nav
+				a.logo.logo__link.main-nav__logo(href="/")
+					svg.logo__img
+						use(xlink:href="img/icons/icons.svg#logo-main")
+				button.burger-menu
+					img.burger-menu__icon(src="img/icons/icons.svg#burger_menu" alt="burger menu icon")
+		div.hero-inner
+			div.container
+				div.hero-content
+					h1.hero__title New Automation Tool for Your Home
+					p.hero__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
+					button.button.hero__btn See Our Project
+	section.whatwedo
+		div.container
+			div.whatwedo-inner
+				div.whatwedo-left-side
+					h2.whatwedo__title What we do to help our client grow in digital era,
+					div.card
+						div.card-header
+							img.card-header__img(src="img/icons/icons.svg#card_img_1", alt="card two img")
+						div.card-content
+							h3.card__title Make Your business To Be Better Famous In Internet
+							p.card__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							a.card__link(href="#") Learn more
+								svg.card__link-arrow
+									use(xlink:href="img/icons/icons.svg#arrow")
+				div.whatwedo-right-side
+					div.card
+						div.card-header
+							img.card-header__img.card-two__img(src="img/icons/icons.svg#card_img_2", alt="card two img")
+						div.card-content
+							h3.card__title Bring Technology To Your Comfrotable Home
+							p.card__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							a.card__link(href="#") Learn more
+								svg.card__link-arrow
+									use(xlink:href="img/icons/icons.svg#arrow")
+					div.card
+						div.card-header
+							img.card-header__img(src="img/icons/icons.svg#card_img_3", alt="card three img")
+						div.card-content
+							h3.card__title Build Your Digital Product That Suitable For Your Need
+							p.card__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							a.card__link(href="#") Learn more
+								svg.card__link-arrow
+									use(xlink:href="img/icons/icons.svg#arrow")
+	section.ourclient
+		div.container
+			div.ourclient-inner
+				div.ourclient-header
+					h2.ourclient__title Our Beloved Client
+					p.ourclient__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				ul.ourclient-client-list
+					li.ourclient-client-list__item
+						a.ourclient-client-list__link(href="#") LOGO CLIENT 1
+					li.ourclient-client-list__item
+						a.ourclient-client-list__link(href="#") LOGO CLIENT 2
+					li.ourclient-client-list__item
+						a.ourclient-client-list__link(href="#") LOGO CLIENT 3
+					li.ourclient-client-list__item
+						a.ourclient-client-list__link(href="#") LOGO CLIENT 4
+					li.ourclient-client-list__item
+						a.ourclient-client-list__link(href="#") LOGO CLIENT 5
+					li.ourclient-client-list__item
+						a.ourclient-client-list__link(href="#") LOGO CLIENT 6
+					li.ourclient-client-list__item
+						a.ourclient-client-list__link(href="#") LOGO CLIENT 7
+					li.ourclient-client-list__item
+						a.ourclient-client-list__link(href="#") More Client
+	section.footer
+		div.container
+			div.footer-inner.footer-inner--rounding
+				div.footer-header
+					div.footer-header-text
+						h2.footer__title Intersted to woek with our team?
+						p.footer__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					div.footer-btn-wrap
+						button.button.footer__btn.open-form Let’s Talk
+				div.footer-bottom
+					div.footer-contacts
+						div.footer-logo-wrap
+							svg.logo__img
+								use(xlink:href="img/icons/icons.svg#logo-secondary")
+							span.footer-logo__text Afrianska
+						ul.footer-contacts-list
+							li.footer-contacts-list__item
+								<span>A.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							li.footer-contacts-list__item
+								<span>T.</span>
+								a.footer-contacts-list__link(href="#") +62-812-7313-4321
+							li.footer-contacts-list__item
+								<span>E.</span>
+								a.footer-contacts-list__link(href="mailto:hello.afrian@gmail.com") hello.afrian@gmail.com
+					div.footer-nav-block
+						h3.footer-nav__title About US
+						ul.footer-nav-wrap
+							li.footer-nav__item
+								a.footer-nav__link(href="#") About
+							li.footer-nav__item
+								a.footer-nav__link(href="#") What We Do
+							li.footer-nav__item
+								a.footer-nav__link(href="#") Project
+							li.footer-nav__item
+								a.footer-nav__link(href="#") How It Work With Us
+					div.footer-nav-block
+						h3.footer-nav__title Follow US
+						ul.footer-nav-wrap
+							li.footer-nav__item
+								a.footer-nav__link(href="#") Instagram
+							li.footer-nav__item
+								a.footer-nav__link(href="#") Facebook
+							li.footer-nav__item
+								a.footer-nav__link(href="#") LinkedIn
+							li.footer-nav__item
+								a.footer-nav__link(href="#") Youtube
+				span.footer__copy 2019 © Afrianska. All rights reserved.
+	div.popup.popup-overlay
+		form.form.popup-form(action="formHandler.php")
+			h2.form__title SEND US MESSAGE
+			div.form-group
+				label(for="fullname")
+				input.form-control.form__input(type="text" id="fullname" name="fullname" placeholder="Your Name")
+			div.form-group
+				label(for="email")
+				input.form-control.form__input(type="text" id="email" name="email" placeholder="Your Email")
+			div.form-group
+				label(for="message")
+				textarea.form-control.form__message(id="message" name="message" placeholder="Your Message")
+			button.button.form__btn(type="submit") SUBMIT
+			span.popup__close &#10006;
+		div.popup-message-wrap
+			div.popup-message-content
+				p.popup-message__text
+			button.popup__close &#10006;
